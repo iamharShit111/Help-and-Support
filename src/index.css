@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px 20px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+  }
+  
+  .nav-items {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-icon {
+    margin-left: 20px;
+    cursor: pointer;
+    color: black;
+    font-size: 20px;
+  }
+
+
+
+/* Fix the main container */
+.main {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+
+
+
+/* index.css */
+.help-section {
+    padding: 60px 5%;
+    background: linear-gradient(to bottom, #DFF6F0, white);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .help-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .help-header h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .help-header p {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .help-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .card-title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .card-icon {
+    font-size: 24px;
+    color: #0088cc;
+  }
+  
+  .card-header h2 {
+    margin: 0;
+  }
+  
+  .arrow {
+    font-size: 18px;
+    color: #666;
+    transition: transform 0.3s;
+  }
+  
+  .dropdown.open .arrow {
+    transform: rotate(180deg);
+  }
+  
+  .dropdown-content {
+    width: 100%;
+    margin-top: 10px;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  .chat-options {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 15px;
+  }
+  
+  .chat-options button {
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    font-size: 24px; /* Icon size */
+    color: white;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .telegram {
+    background-color: #0088cc;
+  }
+  
+  .whatsapp {
+    background-color: #25d366;
+  }
+  
+  .livechat {
+    background-color: #666;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  .textarea {
+    height: 80px;
+    resize: none;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 10px;
+    background: #0088cc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background: #0077b6;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-5px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .help-header h1 {
+      font-size: 24px;
+    }
+  
+    .help-header p {
+      font-size: 16px;
+    }
+  
+    .card {
+      padding: 15px;
+    }
+  
+    .chat-options button {
+      padding: 8px 12px;
+      font-size: 12px;
+    }
+  }
+  
+  .card-css {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .card-css .card-icon {
+    margin-bottom: 10px;
+  }
+
+
+  .card-div {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }

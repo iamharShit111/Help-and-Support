@@ -1,0 +1,86 @@
+/* App.css */
+
+.help-section {
+    padding: 20px;
+  }
+  
+  .help-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .help-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .card {
+    flex: 1 1 300px;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .card-title-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .dropdown-content {
+    margin-top: 10px;
+    text-align: left;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    z-index: 1;
+  }
+  
+  .textarea {
+    min-height: 100px;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .help-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      max-width: 100%;
+    }
+  }
